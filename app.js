@@ -19,7 +19,7 @@ var inputText = txtInput.value;
 
  //var tempUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=" + inputText;
 
- tempUrl = "https://api.funtranslations.com/translate/ermahgerd.json" +"?text=" + inputText;
+ //tempUrl = "https://api.funtranslations.com/translate/ermahgerd.json" +"?text=" + inputText;
 
  console.log(tempUrl);
 
