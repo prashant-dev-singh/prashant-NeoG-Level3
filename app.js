@@ -17,17 +17,18 @@ btnShowMessage.addEventListener('click',function showMessage(){
 var inputText = txtInput.value;
  //txtOutput.value = inputText;
 
- var tempUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=" + inputText;
+ //var tempUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=" + inputText;
 
- //tempUrl = "https://api.funtranslations.com/translate/ermahgerd.json" +"?text=" + inputText;
+ // var tempUrl = "https://api.funtranslations.com/translate/pirate.json" +"?text=" + inputText;
+// Pirate API
 
+ var tempUrl = "https://api.funtranslations.com/translate/cockney.json" +"?text=" + inputText;
  console.log(tempUrl);
 
  
  fetch(tempUrl)
  .then(response => response.json())
- .then(json =>  txtOutput.value =json.contents.translated)
- 
+ .then(json =>  txtOutput.value =json.contents.translated) 
  .catch(errorHandler);
 
 
