@@ -8,21 +8,29 @@ var txtOutput = document.querySelector("#txtOutput");
 btnShowMessage.addEventListener('click',function showMessage(){
 
 var inputText = txtInput.value;
- //txtOutput.value = inputText;
 
- //var tempUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=" + inputText;
+if(inputText==="")
+alert("Please enter your text !!");
 
-  var tempUrl = "https://api.funtranslations.com/translate/minion.json" +"?text=" + inputText;
-// Pirate API
+else{
 
- //var tempUrl = "https://api.funtranslations.com/translate/cockney.json" +"?text=" + inputText;
- console.log(tempUrl);
+   //var tempUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=" + inputText;
 
- 
- fetch(tempUrl)
- .then(response => response.json())
- .then(json =>  txtOutput.value =json.contents.translated) 
- .catch(errorHandler);
+   var tempUrl = "https://api.funtranslations.com/translate/minion.json" +"?text=" + inputText;
+   // Pirate API
+   
+  //  var tempUrl = "https://api.funtranslations.com/translate/cockney.json" +"?text=" + inputText;
+    console.log(tempUrl);
+   
+    
+    fetch(tempUrl)
+    .then(response => response.json())
+    .then(json =>  txtOutput.value =json.contents.translated) 
+    .catch(errorHandler);
+
+    
+}
+
 
 
 

@@ -1,9 +1,31 @@
 
 body{
-    border: 2px sold red;
+    margin: 0;
+    padding: 0;
+    
+    background-image: url(minion.jpg);
+    background-size: cover;
 }
 
 .container{
     margin: auto;
-    border: 2px sold red;
+    height: 70vh;
+    width: 80vh;
+    text-align: center;
+
+}
+
+textarea{
+    border-radius: 5px;
+}
+
+h1,h3{
+    color: rgb(252, 247, 248);
+}
+
+button{
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
 }
